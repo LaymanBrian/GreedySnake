@@ -10,7 +10,7 @@ using namespace std;
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
 {
-    this->setFixedSize(BLOCK_WIDTH * ROW_COUNT, BLOCK_HEIGHT * COLUMN_COUNT);
+    this->setFixedSize(BLOCK_WIDTH * COLUMN_COUNT, BLOCK_HEIGHT * ROW_COUNT);
     QPalette p;
     p.setBrush(QPalette::Window, QBrush(QColor(200, 200, 200)));
     this->setPalette(p);
